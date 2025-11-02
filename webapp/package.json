@@ -1,5 +1,5 @@
 {
-  "name": "webapp",
+  "name": "@fullstack-idea/webapp",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,9 +11,10 @@
     "prettify": "prettier --loglevel warn --cache --write '{src/**/*,*}.{ts,tsx,js,json,yml,scss}' '!**/{node_modules,dist}/**/*'"
   },
   "dependencies": {
+    "@fullstack-idea/backend": "workspace:*",
     "@tanstack/react-query": "^5.90.6",
     "@trpc/client": "^11.7.1",
-    "@trpc/react-query": "^11.7.1",
+    "@trpc/tanstack-react-query": "^11.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -28,6 +29,7 @@
     "eslint-plugin-react-refresh": "^0.4.3",
     "prettier": "^3.0.1",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "vite-tsconfig-paths": "^5.1.4"
   }
 }

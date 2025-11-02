@@ -1,0 +1,9 @@
+{
+  "name": "fullstack-idea",
+  "private": "true",
+  "version": "0.0.0",
+  "scripts": {
+    "dev:backend": "pnpm --filter @fullstack-idea/backend run dev",
+    "dev:webapp": "pnpm --filter @fullstack-idea/webapp run dev"
+  }
+}
