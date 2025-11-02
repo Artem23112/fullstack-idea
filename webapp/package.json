@@ -11,6 +11,9 @@
     "prettify": "prettier --loglevel warn --cache --write '{src/**/*,*}.{ts,tsx,js,json,yml,scss}' '!**/{node_modules,dist}/**/*'"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.90.6",
+    "@trpc/client": "^11.7.1",
+    "@trpc/react-query": "^11.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
