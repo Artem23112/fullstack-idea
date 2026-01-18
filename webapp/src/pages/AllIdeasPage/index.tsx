@@ -1,8 +1,7 @@
-import { useTRPC } from '@lib/trpc'
+import { trpc } from '@lib/trpc'
 import { useQuery } from '@tanstack/react-query'
 
 export const AllIdeasPage = () => {
-  const trpc = useTRPC()
   const { data } = useQuery(trpc.getIdeas.queryOptions())
   console.log(data)
   return (
