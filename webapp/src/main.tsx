@@ -1,12 +1,13 @@
-import { TrpcInitProvider } from '@components/providers/trpcInitialProvider.tsx'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { App } from './App.tsx'
+import { QueryClientProvider } from '@tanstack/react-query'
+import { queryClient } from './lib/trpc.ts'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <TrpcInitProvider>
+    <QueryClientProvider client={queryClient}>
       <App />
-    </TrpcInitProvider>
+    </QueryClientProvider>
   </React.StrictMode>
 )
