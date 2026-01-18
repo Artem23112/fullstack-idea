@@ -6,7 +6,8 @@
     "dev": "ts-node-dev --rs ./src/index.ts",
     "build": "rimraf ./dist && tsc --build ./tsconfig.json",
     "start": "node ./dist/index.js",
-    "prettify": "prettier --loglevel warn --cache --write '{src/**/*,*}.{ts,tsx,js,json,yml,scss}' '!**/{node_modules,dist}/**/*'"
+    "prettify": "prettier --loglevel warn --cache --write '{src/**/*,*}.{ts,tsx,js,json,yml,scss}' ",
+    "types": "tsc --noEmit --project ./tsconfig.json"
   },
   "dependencies": {
     "@trpc/client": "^11.7.1",
@@ -17,11 +18,6 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.17",
-    "@types/node": "^20.5.0",
-    "prettier": "^3.0.2",
-    "rimraf": "^5.0.1",
-    "ts-node": "^10.9.1",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.1.6"
+    "@types/node": "^20.5.0"
   }
 }
