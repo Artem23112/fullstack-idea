@@ -2,6 +2,7 @@
   "name": "fullstack-idea",
   "private": "true",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "b": "pnpm --filter @fullstack-idea/backend",
     "w": "pnpm --filter @fullstack-idea/webapp",
@@ -10,7 +11,20 @@
     "prettify": "pnpm -r --parallel prettify"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@typescript-eslint/eslint-plugin": "^8.53.0",
+    "@typescript-eslint/parser": "^8.53.0",
     "concurrently": "^9.2.1",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-promise": "^7.2.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
     "prettier": "^3.0.2",
     "rimraf": "^5.0.1",
     "ts-node": "^10.9.1",
