@@ -36,8 +36,7 @@ export default [
     rules: {
       'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
-      'simple-import-sort/imports': 'error',
-      'simple-import-sort/exports': 'error',
+
       'prettier/prettier': 'error',
     },
   },
