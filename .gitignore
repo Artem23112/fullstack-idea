@@ -8,6 +8,7 @@ pnpm-debug.log*
 pnpm-lock.yaml
 **/pnpm-lock.yaml
 lerna-debug.log*
+.eslintcache
 
 node_modules
 dist
