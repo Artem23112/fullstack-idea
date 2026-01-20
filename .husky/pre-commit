@@ -1,2 +1,2 @@
-pnpm lint-staged --no-stash
+pnpm lint-staged --no-stash --debug
 pnpm types
