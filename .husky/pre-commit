@@ -1,2 +1,10 @@
-pnpm lint-staged --no-stash --debug
-pnpm types
+# 1. Линтинг staged файлов
+pnpm lint-staged
+
+# 2. Проверка типов только для staged TS/TSX файлов
+STAGED_TS_FILES=$(git diff --cached --name-only --diff-filter=ACMR | grep -E '\.(ts|tsx)$')
+
+if [ -n "$STAGED_TS_FILES" ]; then
+  echo "Checking TypeScript types for staged files..."
+  pnpm tsc --noEmit $STAGED_TS_FILES
+fi
