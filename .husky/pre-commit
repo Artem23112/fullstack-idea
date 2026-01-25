@@ -10,12 +10,12 @@ if [ -n "$STAGED_TS_FILES" ]; then
   # Проверяем webapp файлы
   WEBAPP_FILES=$(echo "$STAGED_TS_FILES" | grep '^webapp/' || true)
   if [ -n "$WEBAPP_FILES" ]; then
-    cd webapp && pnpm tsc --noEmit && cd ..
+    cd webapp && pnpm types && cd ..
   fi
 
   # Проверяем backend файлы
   BACKEND_FILES=$(echo "$STAGED_TS_FILES" | grep '^backend/' || true)
   if [ -n "$BACKEND_FILES" ]; then
-    cd backend && pnpm tsc --noEmit && cd ..
+    cd backend && pnpm types && cd ..
   fi
 fi
