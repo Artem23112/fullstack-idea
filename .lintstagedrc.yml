@@ -1,10 +1,10 @@
 'backend/**/*.{ts,tsx,js}':
   - 'eslint --cache --fix'
-  - 'prettier --loglevel warn --cache --write'
+  - 'prettier --log-level warn --cache --write'
 
 'webapp/**/*.{ts,tsx,js}':
   - 'eslint --cache --fix'
-  - 'prettier --loglevel warn --cache --write'
+  - 'prettier --log-level warn --cache --write'
 
 '**/*.{json,yml,scss}':
-  - 'prettier --loglevel warn --cache --write'
+  - 'prettier --log-level warn --cache --write'
